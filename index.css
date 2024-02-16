@@ -1,0 +1,84 @@
+/* stylize at least text and range slider in HTML (10pts)
+
+ */
+h1 {
+    color: green;
+    text-align: center;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#drawBoard {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+}
+
+.buttons {
+    margin: 0;
+    position: relative;
+    left: 42%;
+}
+
+#colorRadio {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+
+#linecap {
+    padding: 0;
+    margin-left: 10%;
+    display: block;
+    width: 80%;
+}
+
+#sliderValue {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 70px;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=index.css>
+</head>
+  
+<body>
+    <h1>CSC4130 Assignment 1 Alae-eddine</h1>
+    <p>draw and erase anything you want!</p>
+    <hr>
+    <div id = "drawBoard">
+    <!--  define a canvas (5pts) -->
+        <canvas id="myCanvas" width="800" height="500" style="border: 5px solid black;"></canvas>
+
+    <!--  define two buttons which are used for drawing and erasing
+          and label the two buttons as draw and erase (6pts) -->
+        <div class="buttons">
+            <button type="button" id="draw">draw</button>
+            <button type="button" id="erase">erase</button>
+        </div>
+    </div>
+
+    <!--  define three radios which are used for changing colors (green, red, and blue)
+          and label the three radios as green, red, and blue (9pts)-->
+
+    <div id = "colorRadio">
+        <input type="radio" id="colorChoice1" name="color" value="green" />
+        <label for="colorChoice1">Green</label>
+    
+        <input type="radio" id="colorChoice2" name="color" value="red" />
+        <label for="colorChoice2">Red</label>
+    
+        <input type="radio" id="colorChoice3" name="color" value="blue" />
+        <label for="colorChoice3">Blue</label>
+    </div>
+    
+    <!--  define a range slider which are used for controling the line width
+           , label it as "Line Width" and show the corresponding value below the slider bar (5pts)-->
+
+    <div id ="colorSlider" class = "slidecontainer">
+        <input type="range" style="display: inline;" min="1" max="100" value="5" class="slider" id="linecap" oninput="this.nextElementSibling.nextElementSibling.value = 'Value: ' + this.value">
+        <output >Line Width</output>
+        <output id ="sliderValue">Value: 5</output>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+  
+</html>
